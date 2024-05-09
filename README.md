@@ -1,1 +1,1 @@
-# Landing Page :: The Story-Teller
+# Landing Page :: StoryTelling Website Design
