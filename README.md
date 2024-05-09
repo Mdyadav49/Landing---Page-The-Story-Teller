@@ -1,1 +1,1 @@
-# Landing Pag :: The Story-Teller
+# Landing Page :: The Story-Teller
