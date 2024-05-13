@@ -15,8 +15,7 @@ body {
     height: 100%;
 }
 
-.nav {
-    /* background-color: red; */
+.nav {    
     height: 10vh;
     display:flex;
     justify-content:space-between;
@@ -32,8 +31,14 @@ body {
     font-weight: 800;
 }
 .links{
-    display: flex;
-    gap: 50px;
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .links{
+        display: flex;
+        gap: 50px;
+    }
 }
 
 .links a{
@@ -76,8 +81,8 @@ body {
 }
 
 .heading p {
-    margin:20px 0px;
-    width: 33%;
+    margin:20px 5px;
+    max-width: 33em;
     font-size:18px;
 }
 .heading button {
@@ -100,7 +105,7 @@ body {
 }
 .dleft {
     width:48%;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -108,19 +113,25 @@ body {
 
 .dleft h2 {
     font-weight: 550;
-    margin: 20px 30px;
     font-size:24px;
+}
+
+@media screen and (max-width:400px){
+    .dleft h2{
+        text-align:center;   
+    }
 }
 
 .miniline {
     height: 1px;
-    background-color: black;
-    margin: 0px 30px 20px 0px;
+    border-bottom: 2px solid black; 
+    margin: 20px 30px 20px 0px;
     width: 28px;
 }
 
 .dleft p {
-    width:25%;
+    max-width:25%;
+    margin-left:5px;
 }
 
 .dright {
@@ -151,5 +162,5 @@ body {
 }
 
 .dright .fdeta p {
-    width: 25%;
+    max-width: 230px;
 }
