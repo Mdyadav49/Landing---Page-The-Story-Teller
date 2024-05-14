@@ -20,8 +20,12 @@ body {
     display:flex;
     justify-content:space-between;
     align-items: center;        
-    margin:0px 30px;
+    margin:0px 15px 20px 15px;  
 }
+@media screen and (max-width:768px){
+    .nav{ margin:0px 5px 20px 5px; }
+}
+
 .nav h3{
     text-transform:uppercase;
     font-size: 30px;
@@ -50,11 +54,6 @@ body {
 .menubar {
     display: none;
     border: none;
-    border-radius: 0.375rem;
-    background-color:#ffffff;
-    font-size: 1rem;
-    padding: 0.5rem 1.1 rem;
-    font-weight: 600;
 }
 
 #menuicon {
@@ -63,9 +62,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .menubar {
-        display: block;
-    }
+    .menubar { display: block; }
 }
 
 .heading{
@@ -74,7 +71,12 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    border:none;
 }
+@media screen and (max-width: 767px){
+   .heading{ border:2px solid red; }
+}
+
 .heading h2{
     font-weight: 200;
     font-size:40px;
@@ -82,7 +84,7 @@ body {
 
 .heading p {
     margin:20px 5px;
-    max-width: 33em;
+    max-width: 30em;
     font-size:18px;
 }
 .heading button {
@@ -105,7 +107,7 @@ body {
 }
 .dleft {
     width:48%;
-    height: 250px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -116,12 +118,6 @@ body {
     font-size:24px;
 }
 
-@media screen and (max-width:400px){
-    .dleft h2{
-        text-align:center;   
-    }
-}
-
 .miniline {
     height: 1px;
     border-bottom: 2px solid black; 
@@ -130,37 +126,59 @@ body {
 }
 
 .dleft p {
-    max-width:25%;
-    margin-left:5px;
+    max-width:180px;
 }
 
 .dright {
     width:48%;
     padding-top: 20px;
-    margin-bottom:60px;
     padding-left: 20px;
+    margin-bottom:10px;
     border-left: 2px solid #000;
 }
 
 .dright  .childfeat {
     display: flex;
-    gap: 25px;
-    margin-bottom: 60px;
-
+    gap: 8px;
+    margin-bottom: 22px;
 }
 
 .dright .feat{
     height: 50px;
-    width:90px;
+    width:50px;
+    background-repeat:no-repeat;
+    background-position:center;
     background-size: cover;
-    font-size: 30PX;
 }
 
 .dright .fdeta h2 {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .dright .fdeta p {
     max-width: 230px;
+}
+
+@media screen and (max-width:670px){
+
+    .details {
+        display: flex;
+        flex-direction:column;
+    }
+    .dleft {
+        width:100%;
+        align-items:center;
+    }
+    .miniline{
+        margin: 10px 0px;
+    }
+
+    .dright {
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding: 0px 5px;
+    }
 }
